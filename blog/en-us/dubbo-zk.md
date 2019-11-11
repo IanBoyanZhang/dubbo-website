@@ -10,7 +10,7 @@ description: This article introduces basic concepts of Zookeeper, and how to use
 
 ### The basic concept
 
-In the mordern distrbuted applications, there are multiple coordination problems between nodes and nodes, including: leader election, group service, locking, configuration management, naming and synchronization. Apache Zookeeper, as its name implied, is a distributed, open-source coordination service framwork to address these demand. 
+In the modern distrbuted applications, there are multiple coordination problems between nodes and nodes, including: leader election, group service, locking, configuration management, naming and synchronization. Apache Zookeeper, as its name implied, is a distributed, open-source coordination service framwork to address these demand. 
 
 In order to ensure the high performance, highly available and strictly ordered access, the performance aspects of ZooKeeper means it can be used in large, distributed systems and can also be deployed in cluster mode, which called 'ZooKeeper ensemble'. In ZooKeeper ensemble, all write requests from clients are forwarded to a single server, called the leader, through the ZAB(Zookeeper Atomic Broadcast Protocol) to make sure the message in each nodes are same. Clients can access any one of the clusters to read and write data without worrying about inconsistencies in the data.
 
